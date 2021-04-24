@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+
+ 
+    <p class="container-md" id="title"> WHO'S THAT POKEMON? </p>
+
+    <div class="container-fluid" id="instructions">
+        <p> <b>How to play:</b> Enter your guess below in the yellow box, then click "Guess!" But guess carefully, you only get one attempt for each Pokemon.</p>
+        <p>Some tips: If you need to specify female add "-f" to the end of the name and use "-" in place of spaces</p>
+        <p> See how many you can name out of the 150 original Pokemon! If you are stuck, try pressing the hint button.</p>
+    </div>
+
+    <div class="container-lg" id="image-space">
+        <div id="answer-holder"></div>
+        <div id="pokemon-picture"></div>
+        <div id="score">Score: 0/0</div>
+    </div>
+
+    <div class="container-md" id="input-box"> 
+    <input type="text" placeholder="Who's That Pokemon?" id="guessValue">
+    <button type="button" id="submit-button" class="btn btn-dark">Guess!</button>
+    </div>
+
+    <button type="button" id="hint-button">Need a hint?</button>
+    <div id="hint-holder"></div>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
